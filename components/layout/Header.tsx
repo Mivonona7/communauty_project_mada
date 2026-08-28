@@ -22,7 +22,6 @@ export default function Header() {
     { name: 'À propos', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Équipe', href: '#team' },
-    { name: 'Localisation', href: '#location' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -53,7 +52,7 @@ export default function Header() {
 
           <div className="hidden md:block">
             <a href="tel:+261386720146">
-              <Button variant="primary"><Phone size={20} />    Appeler</Button>
+              <Button variant="primary"> Appeler</Button>
             </a>
           </div>
 

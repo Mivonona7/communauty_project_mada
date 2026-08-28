@@ -62,9 +62,7 @@ export default function Hero() {
               <Button size="lg" variant="outline" className="bg-white">
                 En savoir plus
               </Button>
-              <Button size="lg" variant="secondary">
-                <Users className="mr-2 w-5 h-5" /> Rejoins-nous
-              </Button>
+              
             </motion.div>
             
             <motion.div variants={itemVariants} className="flex flex-wrap gap-8 justify-start items-center border-t border-gray-200/50 pt-8">

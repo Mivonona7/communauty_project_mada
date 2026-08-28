@@ -77,19 +77,9 @@ const teamMembers = [
     facebook: "https://m.me/rinah.eventa"
   },
   {
-    name: "ANTONIO",
-    role: "Membre de l'équipe",
-    image: "/teams/antonio.jpeg",
-    description: "Participe activement au succès des projets.",
-    email: "antonio@eventa.mg",
-    phone: "+261 34 00 000 08",
-    whatsapp: "https://wa.me/261340000008",
-    facebook: "https://m.me/antonio.eventa"
-  },
-  {
     name: "RALPH",
     role: "Membre de l'équipe",
-    image: "/teams/ralph.jpeg",
+    image: "/teams/ralph.jpg",
     description: "Participe activement au succès des projets.",
     email: "ralph@eventa.mg",
     phone: "+261 34 00 000 09",
@@ -224,14 +214,14 @@ export default function Team() {
 
           <button 
             onClick={handlePrev}
-            className="absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-[--color-blue-violet] hover:bg-[--color-blue-violet] hover:text-white transition-colors z-10"
+            className="absolute top-1/2 left-0 md:-left-12 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-[--color-blue-violet] hover:bg-[--color-blue-violet] hover:text-white transition-colors z-10"
           >
             <ChevronLeft size={24} />
           </button>
           
           <button 
             onClick={handleNext}
-            className="absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-[--color-blue-violet] hover:bg-[--color-blue-violet] hover:text-white transition-colors z-10"
+            className="absolute top-1/2 right-0 md:-right-12 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-[--color-blue-violet] hover:bg-[--color-blue-violet] hover:text-white transition-colors z-10"
           >
             <ChevronRight size={24} />
           </button>

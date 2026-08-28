@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
+// app/layout.tsx
+import 'leaflet/dist/leaflet.css';
 
 export const metadata: Metadata = {
   title: 'Eventa MG | Communauté d\'Experts et d\'Innovation',
