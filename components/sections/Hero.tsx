@@ -1,4 +1,4 @@
-// components/sections/Hero.tsx (version améliorée)
+// components/sections/Hero.tsx (version texte à gauche)
 'use client';
 
 import React from 'react';
@@ -34,14 +34,15 @@ export default function Hero() {
       />
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="grid grid-cols-1 gap-12 items-center">
+        {/* Grille à deux colonnes sur md+ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[60vh]">
           
-          {/* Text Content */}
+          {/* Colonne gauche : texte aligné à gauche */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="max-w-3xl mx-auto text-center"
+            className="md:col-start-1 text-left"
           >
             <motion.div variants={itemVariants} className="mb-6">
               <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-[#212E53] rounded-full shadow-md">
@@ -57,33 +58,37 @@ export default function Hero() {
               Développeurs, experts IA, photographes, marketeurs, artistes et plus encore. Une communauté pour partager, progresser ensemble et créer les plateformes de demain, de Madagascar à l'international.
             </motion.p>
             
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12 justify-center flex-wrap">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 mb-12 justify-start flex-wrap">
               <Button size="lg" variant="outline" className="bg-white">
                 En savoir plus
               </Button>
-              {/* Nouveau bouton "Rejoins-nous" */}
               <Button size="lg" variant="secondary">
                 <Users className="mr-2 w-5 h-5" /> Rejoins-nous
               </Button>
             </motion.div>
             
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-8 justify-center items-center border-t border-gray-200/50 pt-8">
-              <div className="bg-white/70 p-4 rounded-xl backdrop-blur-sm shadow-sm">
-                <div className="text-2xl font-bold text-black flex justify-center items-center gap-1">
+            <motion.div variants={itemVariants} className="flex flex-wrap gap-8 justify-start items-center border-t border-gray-200/50 pt-8">
+              <div className="bg-white/70 p-4 rounded-xl backdrop-blur-sm shadow-sm text-left">
+                <div className="text-2xl font-bold text-black flex justify-start items-center gap-1">
                   10+ <Star className="text-yellow-500 fill-current" size={20} />
                 </div>
                 <div className="text-sm text-black font-semibold">Domaines d'expertise</div>
               </div>
-              <div className="bg-white/70 p-4 rounded-xl backdrop-blur-sm shadow-sm">
+              <div className="bg-white/70 p-4 rounded-xl backdrop-blur-sm shadow-sm text-left">
                 <div className="text-2xl font-bold text-black">100%</div>
                 <div className="text-sm text-black font-semibold">Collaboration & Partage</div>
               </div>
-              <div className="bg-white/70 p-4 rounded-xl backdrop-blur-sm shadow-sm">
+              <div className="bg-white/70 p-4 rounded-xl backdrop-blur-sm shadow-sm text-left">
                 <div className="text-2xl font-bold text-black">Innovant</div>
                 <div className="text-sm text-black font-semibold">Visions & Projets</div>
               </div>
             </motion.div>
           </motion.div>
+
+          {/* Colonne droite : espace libre pour une image ou illustration */}
+          <div className="hidden md:block">
+            {/* Tu peux insérer ici une image, un composant décoratif, etc. */}
+          </div>
 
         </div>
       </div>
