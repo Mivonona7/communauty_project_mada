@@ -20,16 +20,16 @@ export default function Footer() {
               {t('footer.description')}
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
-              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
+              <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
                 <Globe size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
+              <a href="#" aria-label="WhatsApp" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
                 <MessageCircle size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
+              <a href="#" aria-label="Partager" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
                 <Share2 size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
+              <a href="#" aria-label="Lien" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
                 <LinkIcon size={18} />
               </a>
             </div>

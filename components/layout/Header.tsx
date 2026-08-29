@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from 'next/image';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -70,7 +71,9 @@ export default function Header() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center gap-2" aria-label="Accueil">
-              <img src="/logos.jpeg" alt="Eventa MG" className="h-10 w-auto object-contain mix-blend-multiply" />
+              <div className="relative h-10 w-24">
+                <Image src="/logos.jpeg" alt="Eventa MG" fill className="object-contain mix-blend-multiply" sizes="96px" />
+              </div>
             </a>
 
             {/* Desktop Nav */}
@@ -147,7 +150,9 @@ export default function Header() {
               <div className="flex flex-col p-6 pt-12 space-y-4 flex-grow">
                 <div className="flex items-center justify-between mb-8">
                   <a href="#" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                    <img src="/logos.jpeg" alt="Eventa MG" className="h-12 w-auto object-contain mix-blend-multiply" />
+                    <div className="relative h-12 w-28">
+                      <Image src="/logos.jpeg" alt="Eventa MG" fill className="object-contain mix-blend-multiply" sizes="112px" />
+                    </div>
                   </a>
                   <button 
                     onClick={() => setMobileMenuOpen(false)}

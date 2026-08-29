@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Mail, Phone, MessageCircle } from 'lucide-react';
 import SectionTitle from '@/components/ui/SectionTitle';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from 'next/image';
 
 export default function Team() {
   const { t } = useLanguage();
@@ -233,8 +234,8 @@ export default function Team() {
                 >
                   <div className="bg-white rounded-xl shadow-md overflow-hidden text-center h-full border border-gray-100 flex flex-col">
                     <div className="p-8 pb-6 flex flex-col items-center flex-grow">
-                      <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-[--color-yellow]">
-                        <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                      <div className="w-32 h-32 rounded-full overflow-hidden mb-4 border-2 border-[--color-yellow] relative">
+                        <Image src={member.image} alt={member.name} fill className="object-cover" sizes="128px" />
                       </div>
                       <h3 className="text-xl font-bold text-[--color-text-dark] mb-1">{member.name}</h3>
                       <p className="text-sm text-[--color-blue-violet] font-semibold mb-4">{member.role}</p>
@@ -256,6 +257,7 @@ export default function Team() {
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="bg-[#212E53] text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-opacity-90 transition-colors"
+                            aria-label={`WhatsApp de ${member.name}`}
                             title="WhatsApp"
                           >
                             <MessageCircle size={16} />
@@ -265,6 +267,7 @@ export default function Team() {
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="bg-[#212E53] text-white px-4 py-1.5 rounded-full flex items-center justify-center gap-2 hover:bg-opacity-90 transition-colors font-medium text-xs"
+                            aria-label={`Facebook de ${member.name}`}
                           >
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                             {t('team.chat')}
@@ -280,6 +283,7 @@ export default function Team() {
 
           <button 
             onClick={handlePrev}
+            aria-label="Membre précédent"
             className="absolute top-1/2 left-0 md:-left-12 -translate-y-1/2 w-10 h-10 bg-[#212E53] rounded-full shadow-md flex items-center justify-center text-white hover:bg-white hover:text-[#212E53] transition-colors z-10"
           >
             <ChevronLeft size={24} />
@@ -287,6 +291,7 @@ export default function Team() {
           
           <button 
             onClick={handleNext}
+            aria-label="Membre suivant"
             className="absolute top-1/2 right-0 md:-right-12 -translate-y-1/2 w-10 h-10 bg-[#212E53] rounded-full shadow-md flex items-center justify-center text-white hover:bg-white hover:text-[#212E53] transition-colors z-10"
           >
             <ChevronRight size={24} />
@@ -297,6 +302,7 @@ export default function Team() {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
+                aria-label={`Aller à la page ${idx + 1}`}
                 className={`w-2.5 h-2.5 rounded-full transition-colors ${
                   currentIndex === idx ? 'bg-[--color-blue-violet]' : 'bg-gray-300'
                 }`}

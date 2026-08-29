@@ -38,6 +38,7 @@ export default function FloatingActions() {
         whileTap={{ scale: 0.9 }}
         className="w-12 h-12 bg-[#212E53] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#1a2442] transition-colors"
         title="Nous contacter sur WhatsApp"
+        aria-label="Nous contacter sur WhatsApp"
       >
         <Phone size={24} />
       </motion.a>
@@ -51,6 +52,7 @@ export default function FloatingActions() {
         whileTap={{ scale: 0.9 }}
         className="w-12 h-12 bg-[#212E53] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#1a2442] transition-colors"
         title="Nous contacter sur Messenger"
+        aria-label="Nous contacter sur Messenger"
       >
         <MessageCircle size={24} />
       </motion.a>
@@ -64,6 +66,7 @@ export default function FloatingActions() {
         whileTap={{ scale: 0.9 }}
         className="w-12 h-12 bg-[#212E53] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#1a2442] transition-colors"
         title="Notre page Facebook"
+        aria-label="Notre page Facebook"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
       </motion.a>
@@ -80,6 +83,7 @@ export default function FloatingActions() {
             onClick={scrollToTop}
             className="w-12 h-12 bg-[#212E53] rounded-full flex items-center justify-center text-white shadow-lg hover:bg-[#1a2442] transition-colors mt-2"
             title="Retour en haut"
+            aria-label="Retour en haut"
           >
             <ArrowUp size={24} />
           </motion.button>

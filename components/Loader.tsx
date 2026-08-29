@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import { Loader2 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Loader() {
   return (
@@ -14,7 +15,9 @@ export default function Loader() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <img src="/logos.jpeg" alt="Eventa MG Logo" className="h-20 w-auto object-contain" />
+          <div className="relative h-20 w-40">
+            <Image src="/logos.jpeg" alt="Eventa MG Logo" fill className="object-contain" />
+          </div>
         </motion.div>
         
         {/* Spinner Icon */}
