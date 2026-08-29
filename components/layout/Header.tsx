@@ -139,40 +139,66 @@ export default function Header() {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'tween', duration: 0.3, ease: 'easeInOut' }}
-              className="fixed top-0 left-0 bottom-0 z-50 w-[80%] max-w-sm bg-white/95 backdrop-blur-xl shadow-2xl flex flex-col md:hidden overflow-y-auto"
+              className="fixed top-0 left-0 bottom-0 z-50 w-[80%] max-w-sm bg-white shadow-2xl flex flex-col md:hidden overflow-y-auto"
               role="dialog"
               aria-modal="true"
               aria-label="Menu de navigation mobile"
             >
-              <div className="flex flex-col p-6 pt-24 space-y-2 flex-grow">
+              <div className="flex flex-col p-6 pt-12 space-y-4 flex-grow">
+                <div className="flex items-center justify-between mb-8">
+                  <a href="#" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
+                    <img src="/logos.jpeg" alt="Eventa MG" className="h-12 w-auto object-contain mix-blend-multiply" />
+                  </a>
+                  <button 
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-gray-500 hover:text-[--color-blue-violet] transition-colors p-2 rounded-full hover:bg-gray-100"
+                    aria-label="Fermer le menu"
+                  >
+                    <X size={24} />
+                  </button>
+                </div>
                 {navLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
-                    className="text-[--color-text-dark] hover:text-white hover:bg-[--color-blue-violet] active:bg-[#212E53] active:text-white font-semibold text-xl py-3 px-4 rounded-xl block transition-all duration-300 hover:translate-x-2"
+                    className="text-gray-700 hover:text-[--color-blue-violet] hover:bg-blue-50 font-bold text-xl py-3 px-4 rounded-xl block transition-all duration-300"
                   >
                     {link.name}
                   </a>
                 ))}
               </div>
 
-              <div className="p-8 border-t border-gray-100/50 mt-auto bg-gray-50/50">
-                <div className="relative flex items-center w-full">
-                  <Globe size={20} className="text-[--color-blue-violet] absolute left-4 pointer-events-none" />
-                  <select
-                    value={locale}
-                    onChange={(e) => {
-                      setLocale(e.target.value as 'fr' | 'en');
+              <div className="p-6 mt-auto border-t border-gray-100">
+                <p className="text-xs text-center text-gray-400 font-medium mb-3 uppercase tracking-wider">Langue / Language</p>
+                <div className="bg-gray-100 p-1 rounded-2xl flex items-center justify-between relative shadow-inner">
+                  <div
+                    className={`absolute inset-y-1 w-[calc(50%-4px)] bg-white rounded-xl shadow-sm transition-transform duration-300 ease-in-out ${
+                      locale === 'en' ? 'translate-x-[calc(100%+4px)]' : 'translate-x-0'
+                    }`}
+                  ></div>
+                  <button
+                    onClick={() => {
+                      setLocale('fr');
                       setMobileMenuOpen(false);
                     }}
-                    aria-label="Changer de langue"
-                    className="appearance-none bg-white border border-gray-300 text-base font-bold text-gray-800 rounded-xl pl-12 pr-10 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[--color-blue-violet] cursor-pointer hover:bg-gray-100 transition-colors uppercase"
+                    className={`relative z-10 w-1/2 py-3 flex items-center justify-center gap-2 font-bold text-sm rounded-xl transition-colors ${
+                      locale === 'fr' ? 'text-[--color-blue-violet]' : 'text-gray-500 hover:text-gray-700'
+                    }`}
                   >
-                    <option value="fr">Français (FR)</option>
-                    <option value="en">English (EN)</option>
-                  </select>
-                  <ChevronDown size={20} className="text-gray-500 absolute right-4 pointer-events-none" />
+                    FR
+                  </button>
+                  <button
+                    onClick={() => {
+                      setLocale('en');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`relative z-10 w-1/2 py-3 flex items-center justify-center gap-2 font-bold text-sm rounded-xl transition-colors ${
+                      locale === 'en' ? 'text-[--color-blue-violet]' : 'text-gray-500 hover:text-gray-700'
+                    }`}
+                  >
+                    EN
+                  </button>
                 </div>
               </div>
             </motion.div>

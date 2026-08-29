@@ -259,14 +259,14 @@ export default function Team() {
 
           <button 
             onClick={handlePrev}
-            className="absolute top-1/2 left-0 md:-left-12 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-[--color-blue-violet] hover:bg-[--color-blue-violet] hover:text-white transition-colors z-10"
+            className="absolute top-1/2 left-0 md:-left-12 -translate-y-1/2 w-10 h-10 bg-[#212E53] rounded-full shadow-md flex items-center justify-center text-white hover:bg-white hover:text-[#212E53] transition-colors z-10"
           >
             <ChevronLeft size={24} />
           </button>
           
           <button 
             onClick={handleNext}
-            className="absolute top-1/2 right-0 md:-right-12 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-[--color-blue-violet] hover:bg-[--color-blue-violet] hover:text-white transition-colors z-10"
+            className="absolute top-1/2 right-0 md:-right-12 -translate-y-1/2 w-10 h-10 bg-[#212E53] rounded-full shadow-md flex items-center justify-center text-white hover:bg-white hover:text-[#212E53] transition-colors z-10"
           >
             <ChevronRight size={24} />
           </button>
