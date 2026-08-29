@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Community of experts",
+    "title_start": "Uniting our talents to innovate in ",
+    "title_highlight": "Madagascar",
+    "description": "Developers, AI experts, photographers, marketers, artists and more. A community to share, progress together and create the platforms of tomorrow, from Madagascar to the world.",
+    "cta": "Discover our team",
+    "stats": {
+      "expertise": "Fields of expertise",
+      "collaboration_value": "100%",
+      "collaboration": "Collaboration & Sharing",
+      "innovative_value": "Innovative",
+      "innovative": "Visions & Projects"
+    }
+  },
+  "about": {
+    "badge": "About",
+    "title": "Unity is Strength",
+    "description": "Eventa MG is a group of experts (Dev, AI, Photo, Radio TV, DJ, Marketing, etc.) uniting to improve and build the platforms of tomorrow.",
+    "steps": [
+      {
+        "title": "United Community",
+        "description": "A gathering of developers, artists and experts to share and evolve together.",
+        "step": "Step 1"
+      },
+      {
+        "title": "Innovative Vision",
+        "description": "Creating a new and revolutionary platform for Madagascar and the whole world.",
+        "step": "Step 2"
+      },
+      {
+        "title": "Expertise Objective",
+        "description": "Becoming global references by combining our talents and varied skills.",
+        "step": "Step 3"
+      }
+    ]
+  },
+  "services": {
+    "badge": "Our expertise",
+    "title_start": "A multitude of ",
+    "title_highlight": "talents",
+    "description": "Each field is covered by passionate people ready to collaborate and make Madagascar shine.",
+    "list": [
+      {
+        "title": "Development & AI",
+        "description": "Fullstack, Mobile developers and Artificial Intelligence experts to create the solutions of tomorrow."
+      },
+      {
+        "title": "Visual Creation",
+        "description": "Photographers, videographers and designers ready to capture the essence of each project creatively."
+      },
+      {
+        "title": "Media & Communication",
+        "description": "Radio and Television professionals, experts in voice and audiovisual presentation."
+      },
+      {
+        "title": "Digital Marketing & Influence",
+        "description": "Marketers, sales representatives and content creators (TikTokers) to maximize online visibility."
+      },
+      {
+        "title": "Education & Training",
+        "description": "Educators (math teachers, trainers) who transmit knowledge and guide."
+      },
+      {
+        "title": "Beauty & Animation",
+        "description": "Makeup artists (Make up) and DJs to bring an artistic and dynamic touch to events."
+      }
+    ]
+  },
+  "team": {
+    "badge": "Our team",
+    "title": "Who are we?",
+    "chat": "Chat",
+    "roles": {
+      "commercial": "Sales Manager",
+      "dev_web_mobile": "Web & Mobile Developer",
+      "juriste": "Lawyer, Business Manager",
+      "dev_ia_photo": "AI - Web - Mobile Developer & Photographer",
+      "photo_video": "Photographer & Videographer",
+      "dev_designer": "Web - Mobile Developer - Designer",
+      "cm": "Community Manager",
+      "dev_mobile_designer": "Mobile Developer - Designer",
+      "formateur": "Math and Physics Trainer",
+      "dev_web_desktop": "Web - Desktop Developer",
+      "dev_ia_modele": "AI Developer - Photo Model",
+      "dev_ia_web": "AI - Web Developer"
+    },
+    "descriptions": {
+      "ignace": "Ensures that every client and service provider has the best possible experience.",
+      "hala": "High-performance application developer, he transforms your ideas into innovative digital solutions.",
+      "sarobidy": "Guarantees legal compliance and drives business strategy to ensure project growth.",
+      "andry": "JAVA, Next.js and React.js fullstack web developer, also Data Analyst and Data Scientist.",
+      "ismael": "Expert in photography and videography, he captures the most precious moments.",
+      "ankafa": "Architect of our platform and passionate about artificial intelligence.",
+      "kalo": "Manages the brand image and animates the community on social networks with creativity and commitment.",
+      "antonio": "Designs intuitive interfaces and develops smooth user-centric mobile applications.",
+      "rinah": "Shares his knowledge and accompanies with pedagogy to develop the team's skills.",
+      "ralf": "Develops robust software solutions and custom web applications to meet technical needs.",
+      "mendrika": "Software development specialist, he designs high-performance architectures for the web and desktop applications.",
+      "voahary": "Combines expertise in artificial intelligence and artistic creativity as a photo model.",
+      "frederic": "Integrates advanced artificial intelligence solutions into modern web applications."
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Our team at your service",
+    "subtitle": "Contact our members directly for any question or project."
+  },
+  "footer": {
+    "description": "A community of experts (Developers, AI, Photographers, etc.) united to improve, innovate and build together the platforms of tomorrow, from Madagascar to the rest of the world.",
+    "links_title": "Quick Links",
+    "legal_title": "Legal",
+    "contact_title": "Contact",
+    "links": {
+      "about": "About",
+      "services": "Services",
+      "team": "Team",
+      "location": "Location"
+    },
+    "legal": {
+      "mentions": "Legal Mentions",
+      "cgu": "T&C",
+      "privacy": "Privacy",
+      "faq": "FAQ"
+    },
+    "location": "Antananarivo, Madagascar",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,20 +1,25 @@
+'use client';
+
 import React from 'react';
 import { Globe, MessageCircle, Share2, Link as LinkIcon, Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-gray-50 pt-16 pb-8 border-t border-gray-200">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
             <div className="text-2xl font-bold mb-4">
               <span className="text-[--color-yellow]">Eventa</span>
               <span className="text-[--color-blue-violet]"> MG</span>
             </div>
             <p className="text-[--color-text-light] mb-6">
-              Une communauté d'experts (Développeurs, IA, Photographes, etc.) unie pour s'améliorer, innover et construire ensemble les plateformes de demain, de Madagascar au reste du monde.
+              {t('footer.description')}
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[--color-text-dark] hover:text-[--color-blue-violet] hover:border-[--color-blue-violet] border shadow-sm transition-colors">
                 <Globe size={18} />
               </a>
@@ -31,37 +36,37 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-[--color-text-dark] mb-4 text-lg">Liens Rapides</h3>
+            <h3 className="font-bold text-[--color-text-dark] mb-4 text-lg">{t('footer.links_title')}</h3>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">À propos</a></li>
-              <li><a href="#services" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">Services</a></li>
-              <li><a href="#team" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">Équipe</a></li>
-              <li><a href="#location" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">Localisation</a></li>
+              <li><a href="#about" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.links.about')}</a></li>
+              <li><a href="#services" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.links.services')}</a></li>
+              <li><a href="#team" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.links.team')}</a></li>
+              <li><a href="#location" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.links.location')}</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-[--color-text-dark] mb-4 text-lg">Légal</h3>
+            <h3 className="font-bold text-[--color-text-dark] mb-4 text-lg">{t('footer.legal_title')}</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">Mentions légales</a></li>
-              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">CGU / CGV</a></li>
-              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">Confidentialité</a></li>
-              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.legal.mentions')}</a></li>
+              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.legal.cgu')}</a></li>
+              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.legal.privacy')}</a></li>
+              <li><a href="#" className="text-[--color-text-light] hover:text-[--color-blue-violet] transition-colors">{t('footer.legal.faq')}</a></li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-bold text-[--color-text-dark] mb-4 text-lg">Contact</h3>
+            <h3 className="font-bold text-[--color-text-dark] mb-4 text-lg">{t('footer.contact_title')}</h3>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              <li className="flex flex-row justify-center md:justify-start items-start gap-2 md:gap-3">
                 <MapPin className="text-[--color-blue-violet] mt-1 shrink-0" size={20} />
-                <span className="text-[--color-text-light]">Antananarivo, Madagascar</span>
+                <span className="text-[--color-text-light]">{t('footer.location')}</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex flex-row justify-center md:justify-start items-center gap-2 md:gap-3">
                 <Phone className="text-[--color-blue-violet] shrink-0" size={20} />
                 <span className="text-[--color-text-light]">+261 38 67 201 46</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex flex-row justify-center md:justify-start items-center gap-2 md:gap-3">
                 <Mail className="text-[--color-blue-violet] shrink-0" size={20} />
                 <span className="text-[--color-text-light]">contact@eventa.mg</span>
               </li>
@@ -70,7 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-gray-200 text-center text-[--color-text-light]">
-          <p>&copy; {new Date().getFullYear()} Eventa MG. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Eventa MG. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>

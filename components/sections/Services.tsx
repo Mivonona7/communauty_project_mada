@@ -4,6 +4,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useLanguage } from '@/context/LanguageContext';
 import {
   Code,
   Camera,
@@ -13,70 +14,65 @@ import {
   Mic,
 } from 'lucide-react';
 
-const services = [
-  {
-    icon: <Code className="text-[#212E53]" size={28} />,
-    title: 'Développement & IA',
-    description:
-      'Des développeurs Fullstack, Mobile et experts en Intelligence Artificielle pour créer les solutions de demain.',
-    image:
-      'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop', // code
-    color: 'bg-[#212E53]/5',
-    border: 'border-[#212E53]/20',
-  },
-  {
-    icon: <Camera className="text-[#212E53]" size={28} />,
-    title: 'Création Visuelle',
-    description:
-      'Photographes, vidéastes et designers prêts à capturer l\'essence de chaque projet avec créativité.',
-    image:
-      'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=300&fit=crop', // appareil photo
-    color: 'bg-yellow-500/5',
-    border: 'border-yellow-500/20',
-  },
-  {
-    icon: <Mic className="text-[#212E53]" size={28} />,
-    title: 'Médias & Communication',
-    description:
-      'Des professionnels de la Radio et Télévision, experts en voix et présentation audiovisuelle.',
-    image:
-      'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=300&fit=crop', // microphone
-    color: 'bg-red-500/5',
-    border: 'border-red-500/20',
-  },
-  {
-    icon: <TrendingUp className="text-[#212E53]" size={28} />,
-    title: 'Marketing Digital & Influence',
-    description:
-      'Marketeurs, commerciaux et créateurs de contenu (TikTokers) pour maximiser la visibilité en ligne.',
-    image:
-      'https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&h=300&fit=crop', // marketing / business
-    color: 'bg-green-500/5',
-    border: 'border-green-500/20',
-  },
-  {
-    icon: <GraduationCap className="text-[#212E53]" size={28} />,
-    title: 'Éducation & Formation',
-    description:
-      'Des pédagogues (professeurs de mathématiques, formateurs) qui transmettent le savoir et accompagnent.',
-    image:
-      'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=300&fit=crop', // éducation
-    color: 'bg-purple-500/5',
-    border: 'border-purple-500/20',
-  },
-  {
-    icon: <Music className="text-[#212E53]" size={28} />,
-    title: 'Beauté & Animation',
-    description:
-      'Des maquilleurs (Make up) et DJ pour apporter une touche artistique et dynamique aux événements.',
-    image:
-      'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&h=300&fit=crop', // DJ / musique
-    color: 'bg-pink-500/5',
-    border: 'border-pink-500/20',
-  },
-];
-
 export default function Services() {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      icon: <Code className="text-[#212E53]" size={28} />,
+      title: t('services.list.0.title'),
+      description: t('services.list.0.description'),
+      image:
+        'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop', // code
+      color: 'bg-[#212E53]/5',
+      border: 'border-[#212E53]/20',
+    },
+    {
+      icon: <Camera className="text-[#212E53]" size={28} />,
+      title: t('services.list.1.title'),
+      description: t('services.list.1.description'),
+      image:
+        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600&h=300&fit=crop', // appareil photo
+      color: 'bg-yellow-500/5',
+      border: 'border-yellow-500/20',
+    },
+    {
+      icon: <Mic className="text-[#212E53]" size={28} />,
+      title: t('services.list.2.title'),
+      description: t('services.list.2.description'),
+      image:
+        'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=300&fit=crop', // microphone
+      color: 'bg-red-500/5',
+      border: 'border-red-500/20',
+    },
+    {
+      icon: <TrendingUp className="text-[#212E53]" size={28} />,
+      title: t('services.list.3.title'),
+      description: t('services.list.3.description'),
+      image:
+        'https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=600&h=300&fit=crop', // marketing / business
+      color: 'bg-green-500/5',
+      border: 'border-green-500/20',
+    },
+    {
+      icon: <GraduationCap className="text-[#212E53]" size={28} />,
+      title: t('services.list.4.title'),
+      description: t('services.list.4.description'),
+      image:
+        'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&h=300&fit=crop', // éducation
+      color: 'bg-purple-500/5',
+      border: 'border-purple-500/20',
+    },
+    {
+      icon: <Music className="text-[#212E53]" size={28} />,
+      title: t('services.list.5.title'),
+      description: t('services.list.5.description'),
+      image:
+        'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&h=300&fit=crop', // DJ / musique
+      color: 'bg-pink-500/5',
+      border: 'border-pink-500/20',
+    },
+  ];
   return (
     <section id="services" className="py-20 bg-[#F8F9FA] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
@@ -89,14 +85,13 @@ export default function Services() {
           className="text-left max-w-3xl mb-14"
         >
           <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-[#212E53] rounded-full shadow-md mb-4">
-            Nos expertises
+            {t('services.badge')}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-black">
-            Une multitude de <span className="text-[#212E53]">talents</span>
+            {t('services.title_start')}<span className="text-[#212E53]">{t('services.title_highlight')}</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Chaque domaine est couvert par des passionnés prêts à collaborer et à
-            faire rayonner Madagascar.
+            {t('services.description')}
           </p>
         </motion.div>
 

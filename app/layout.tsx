@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 // app/layout.tsx
 import 'leaflet/dist/leaflet.css';
+import { LanguageProvider } from '@/context/LanguageContext';
 
 export const metadata: Metadata = {
   title: 'Eventa MG | Communauté d\'Experts et d\'Innovation',
@@ -15,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   );
 }

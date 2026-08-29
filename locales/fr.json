@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "team": "Équipe",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Communauté d'experts",
+    "title_start": "Unissons nos talents pour innover à ",
+    "title_highlight": "Madagascar",
+    "description": "Développeurs, experts IA, photographes, marketeurs, artistes et plus encore. Une communauté pour partager, progresser ensemble et créer les plateformes de demain, de Madagascar à l'international.",
+    "cta": "Découvrir notre équipe",
+    "stats": {
+      "expertise": "Domaines d'expertise",
+      "collaboration_value": "100%",
+      "collaboration": "Collaboration & Partage",
+      "innovative_value": "Innovant",
+      "innovative": "Visions & Projets"
+    }
+  },
+  "about": {
+    "badge": "À propos",
+    "title": "L'Union Fait La Force",
+    "description": "Eventa MG est un ensemble d'experts (Dev, IA, Photo, Radio TV, DJ, Marketing, etc.) qui s'unissent pour s'améliorer et construire la plateforme de demain.",
+    "steps": [
+      {
+        "title": "Communauté Unie",
+        "description": "Un rassemblement de développeurs, artistes et experts pour partager et évoluer ensemble.",
+        "step": "Étape 1"
+      },
+      {
+        "title": "Vision Innovante",
+        "description": "Créer une plateforme nouvelle et révolutionnaire pour Madagascar et le monde entier.",
+        "step": "Étape 2"
+      },
+      {
+        "title": "Objectif Expertise",
+        "description": "Devenir des références mondiales en conjuguant nos talents et nos compétences variées.",
+        "step": "Étape 3"
+      }
+    ]
+  },
+  "services": {
+    "badge": "Nos expertises",
+    "title_start": "Une multitude de ",
+    "title_highlight": "talents",
+    "description": "Chaque domaine est couvert par des passionnés prêts à collaborer et à faire rayonner Madagascar.",
+    "list": [
+      {
+        "title": "Développement & IA",
+        "description": "Des développeurs Fullstack, Mobile et experts en Intelligence Artificielle pour créer les solutions de demain."
+      },
+      {
+        "title": "Création Visuelle",
+        "description": "Photographes, vidéastes et designers prêts à capturer l'essence de chaque projet avec créativité."
+      },
+      {
+        "title": "Médias & Communication",
+        "description": "Des professionnels de la Radio et Télévision, experts en voix et présentation audiovisuelle."
+      },
+      {
+        "title": "Marketing Digital & Influence",
+        "description": "Marketeurs, commerciaux et créateurs de contenu (TikTokers) pour maximiser la visibilité en ligne."
+      },
+      {
+        "title": "Éducation & Formation",
+        "description": "Des pédagogues (professeurs de mathématiques, formateurs) qui transmettent le savoir et accompagnent."
+      },
+      {
+        "title": "Beauté & Animation",
+        "description": "Des maquilleurs (Make up) et DJ pour apporter une touche artistique et dynamique aux événements."
+      }
+    ]
+  },
+  "team": {
+    "badge": "Notre équipe",
+    "title": "Qui sommes-nous ?",
+    "chat": "Discuter",
+    "roles": {
+      "commercial": "Responsable Commercial",
+      "dev_web_mobile": "Développeur Web & Mobile",
+      "juriste": "Juriste, Business Manager",
+      "dev_ia_photo": "Développeur IA - Web - Mobile & Photographe",
+      "photo_video": "Photographe & Vidéaste",
+      "dev_designer": "Développeur Web - Mobile - Designer",
+      "cm": "Community Manager",
+      "dev_mobile_designer": "Développeur Mobile - Designer",
+      "formateur": "Formateur en Mathématiques et Physique",
+      "dev_web_desktop": "Développeur Web - Desktop",
+      "dev_ia_modele": "Développeuse IA - Modèle photo",
+      "dev_ia_web": "Développeur IA - Web"
+    },
+    "descriptions": {
+      "ignace": "Assure que chaque client et prestataire vive la meilleure expérience possible.",
+      "hala": "Développeur d'applications performantes, il transforme vos idées en solutions numériques innovantes.",
+      "sarobidy": "Garantit la conformité légale et pilote la stratégie d'affaires pour assurer la croissance des projets.",
+      "andry": "Développeur web fullstack JAVA, Next.js et React.js, également Data Analyst et Data Scientist.",
+      "ismael": "Expert en photographie et vidéographie, il capture les moments les plus précieux.",
+      "ankafa": "Architecte de notre plateforme et passionné par l'intelligence artificielle.",
+      "kalo": "Gère l'image de marque et anime la communauté sur les réseaux sociaux avec créativité et engagement.",
+      "antonio": "Conçoit des interfaces intuitives et développe des applications mobiles fluides centrées sur l'utilisateur.",
+      "rinah": "Partage son savoir et accompagne avec pédagogie pour développer les compétences de l'équipe.",
+      "ralf": "Développe des solutions logicielles robustes et des applications web sur mesure pour répondre aux besoins techniques.",
+      "mendrika": "Spécialiste du développement logiciel, il conçoit des architectures performantes pour le web et les applications de bureau.",
+      "voahary": "Allie expertise en intelligence artificielle et créativité artistique en tant que modèle photo.",
+      "frederic": "Intègre des solutions d'intelligence artificielle avancées dans des applications web modernes."
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Notre équipe à votre écoute",
+    "subtitle": "Contactez directement nos membres pour toute question ou projet."
+  },
+  "footer": {
+    "description": "Une communauté d'experts (Développeurs, IA, Photographes, etc.) unie pour s'améliorer, innover et construire ensemble les plateformes de demain, de Madagascar au reste du monde.",
+    "links_title": "Liens Rapides",
+    "legal_title": "Légal",
+    "contact_title": "Contact",
+    "links": {
+      "about": "À propos",
+      "services": "Services",
+      "team": "Équipe",
+      "location": "Localisation"
+    },
+    "legal": {
+      "mentions": "Mentions légales",
+      "cgu": "CGU / CGV",
+      "privacy": "Confidentialité",
+      "faq": "FAQ"
+    },
+    "location": "Antananarivo, Madagascar",
+    "rights": "Tous droits réservés."
+  }
+}

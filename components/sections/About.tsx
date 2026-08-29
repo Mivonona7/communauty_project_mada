@@ -4,8 +4,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Users, Lightbulb, Target } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function About() {
+  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [pathLength, setPathLength] = useState(0);
   const [showParticles, setShowParticles] = useState(false);
@@ -16,10 +18,9 @@ export default function About() {
     {
       id: 0,
       icon: <Users className="text-[#212E53]" size={32} />,
-      title: 'Communauté Unie',
-      description:
-        'Un rassemblement de développeurs, artistes et experts pour partager et évoluer ensemble.',
-      step: 'Étape 1',
+      title: t('about.steps.0.title'),
+      description: t('about.steps.0.description'),
+      step: t('about.steps.0.step'),
       bg: 'bg-[#212E53]/5',
       border: 'border-[#212E53]/20',
       color: '#212E53',
@@ -27,10 +28,9 @@ export default function About() {
     {
       id: 1,
       icon: <Lightbulb className="text-yellow-500" size={32} />,
-      title: 'Vision Innovante',
-      description:
-        'Créer une plateforme nouvelle et révolutionnaire pour Madagascar et le monde entier.',
-      step: 'Étape 2',
+      title: t('about.steps.1.title'),
+      description: t('about.steps.1.description'),
+      step: t('about.steps.1.step'),
       bg: 'bg-yellow-500/5',
       border: 'border-yellow-500/20',
       color: '#EAB308',
@@ -38,10 +38,9 @@ export default function About() {
     {
       id: 2,
       icon: <Target className="text-gray-700" size={32} />,
-      title: 'Objectif Expertise',
-      description:
-        'Devenir des références mondiales en conjuguant nos talents et nos compétences variées.',
-      step: 'Étape 3',
+      title: t('about.steps.2.title'),
+      description: t('about.steps.2.description'),
+      step: t('about.steps.2.step'),
       bg: 'bg-gray-100',
       border: 'border-gray-300',
       color: '#6B7280',
@@ -130,15 +129,13 @@ export default function About() {
           className="text-left max-w-3xl mb-16"
         >
           <span className="inline-block px-3 py-1 text-sm font-semibold text-white bg-[#212E53] rounded-full shadow-md mb-4">
-            À propos
+            {t('about.badge')}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-black">
-            L'Union Fait La Force
+            {t('about.title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Eventa MG est un ensemble d'experts (Dev, IA, Photo, Radio TV, DJ,
-            Marketing, etc.) qui s'unissent pour s'améliorer et construire la
-            plateforme de demain.
+            {t('about.description')}
           </p>
         </motion.div>
 
