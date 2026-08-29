@@ -155,9 +155,9 @@ export default function Team() {
     },
     {
       name: "Fanasina  BINAH",
-      role: t('team.roles.formateur'),
+      role: t('team.roles.dev_ia_web'),
       image: "/teams/fanasina.jpeg",
-      description: t('team.descriptions.rinah'),
+      description: t('team.descriptions.frederic'),
       email: " fanasinabinah@gmail.com",
       phone: "+261 38 75 303 68",
       whatsapp: "https://wa.me/261387530368",
