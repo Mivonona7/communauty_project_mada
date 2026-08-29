@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { Star, CheckCircle, Users } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import { useLanguage } from '@/context/LanguageContext';
+import Image from 'next/image';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -25,16 +26,18 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-white">
-      {/* Background image avec dégradé sombre pour meilleur contraste */}
-      <div 
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url(/background.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 1,
-        }}
-      />
+      {/* Background image avec next/image pour le LCP */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/background.jpg"
+          alt="Eventa MG Background"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-black/50 mix-blend-multiply pointer-events-none"></div>
+      </div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Grille à deux colonnes sur md+ */}
