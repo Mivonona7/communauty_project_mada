@@ -7,20 +7,40 @@ import SectionTitle from '@/components/ui/SectionTitle';
 
 const teamMembers = [
   {
-    name: "Ignace Raz",
-    role: "Head of Customer Success",
+    name: "Ignace RAZANAJATOVO",
+    role: "Responsable Commercial",
     image: "/teams/IGNACE.jpg",
     description: "Assure que chaque client et prestataire vive la meilleure expérience possible.",
     email: "tiana@eventa.mg",
-    phone: "+261 34 00 000 05",
-    whatsapp: "https://wa.me/261340000005",
+    phone: "+261 34 01 654 12",
+    whatsapp: "https://wa.me/261340165412",
     facebook: "https://m.me/tiana.eventa"
   },
   {
+    name: "HALA Kanty",
+    role: "Développeur Web & Mobile",
+    image: "/teams/hala.jpg",
+    description: "Développeur d'applications performantes, il transforme vos idées en solutions numériques innovantes.",
+    email: "befenosteeven@gmail.com",
+    phone: "+261 34 00 000 03",
+    whatsapp: "https://wa.me/261340000003",
+    facebook: "https://m.me/kanty.eventa"
+  },
+  {
+    name: "Finaritra Sarobidy",
+    role: "Juriste, Business Manager",
+    image: "/teams/sarobidy.jpeg",
+    description: "Garantit la conformité légale et pilote la stratégie d'affaires pour assurer la croissance des projets.",
+    email: "santatriniainafinaritra19@gmail.com",
+    phone: "+261 34 88 122 84",
+    whatsapp: "https://wa.me/261340000006",
+    facebook: "https://m.me/kalo.eventa"
+  },
+  {
     name: "Andry RAMANANTSOA",
-    role: "Developpeur & Photographe",
+    role: "Développeur IA - Web - Mobile & Photographe",
     image: "/teams/andry.png",
-    description: "Developpeur web fullstack JAVA / next js et React js et aussi Data analyst et science des donnees",
+    description: "Développeur web fullstack JAVA, Next.js et React.js, également Data Analyst et Data Scientist.",
     email: "andry@eventa.mg",
     phone: "+261 38 67 201 46",
     whatsapp: "https://wa.me/261386720146",
@@ -31,71 +51,93 @@ const teamMembers = [
     role: "Photographe & Vidéaste",
     image: "/teams/ismael.jpeg",
     description: "Expert en photographie et vidéographie, il capture les moments les plus précieux.",
-    email: "ismael@eventa.mg",
-    phone: "+261 34 00 000 02",
+    email: "ismaeljean@gmail.com",
+    phone: "+261 32 56 819 06",
     whatsapp: "https://wa.me/261340000002",
     facebook: "https://m.me/ismael.eventa"
   },
-  {
-    name: "HALA Kanty",
-    role: "Advisor - Wedding Planner",
-    image: "/teams/hala.jpg",
-    description: "Plus de 500 mariages à son actif, elle guide notre stratégie qualité.",
-    email: "kanty@eventa.mg",
-    phone: "+261 34 00 000 03",
-    whatsapp: "https://wa.me/261340000003",
-    facebook: "https://m.me/kanty.eventa"
-  },
+  
   {
     name: "ANKAFA MATOKY",
-    role: "CTO & Lead Developer",
-    image: "/teams/ankafa.jpg",
+    role: "Développeur Web - Mobile - Designer",
+    image: "/teams/ankafa.jpeg",
     description: "Architecte de notre plateforme et passionné par l'intelligence artificielle.",
-    email: "ankafa@eventa.mg",
-    phone: "+261 34 00 000 04",
+    email: "narindratsiry18@gmail.com",
+    phone: "+261 38 38 466 60",
     whatsapp: "https://wa.me/261340000004",
     facebook: "https://m.me/ankafa.eventa"
   },
   {
-    name: "KALO",
-    role: "Membre de l'équipe",
-    image: "/teams/kalo.jpg",
-    description: "Participe activement au succès des projets.",
-    email: "kalo@eventa.mg",
-    phone: "+261 34 00 000 06",
+    name: "Kalo RAVALOHARIVONY",
+    role: "Community Manager",
+    image: "/teams/kalo.jpeg",
+    description: "Gère l'image de marque et anime la communauté sur les réseaux sociaux avec créativité et engagement.",
+    email: "kaloravaloharivony@gmail.com",
+    phone: "+261 34 88 122 84",
+    whatsapp: "https://wa.me/261340000006",
+    facebook: "https://m.me/kalo.eventa"
+  },
+  
+  {
+    name: "Antonio Visionnaire",
+    role: "Développeur Mobile - Designer",
+    image: "/teams/antonio.jpeg",
+    description: "Conçoit des interfaces intuitives et développe des applications mobiles fluides centrées sur l'utilisateur.",
+    email: "kaloravaloharivony@gmail.com",
+    phone: "+261 34 88 122 84",
     whatsapp: "https://wa.me/261340000006",
     facebook: "https://m.me/kalo.eventa"
   },
   {
-    name: "RINAH",
-    role: "Membre de l'équipe",
+    name: "Rinah RANDRIANARISON",
+    role: "Formateur en Mathématiques et Physique",
     image: "/teams/rinah.jpeg",
-    description: "Participe activement au succès des projets.",
-    email: "rinah@eventa.mg",
-    phone: "+261 34 00 000 07",
+    description: "Partage son savoir et accompagne avec pédagogie pour développer les compétences de l'équipe.",
+    email: "randrianarisonrinah18@gmail.com",
+    phone: "+261 34 36 094 45",
     whatsapp: "https://wa.me/261340000007",
     facebook: "https://m.me/rinah.eventa"
   },
   {
-    name: "RALPH",
-    role: "Membre de l'équipe",
+    name: "Ralf FANANTENANA",
+    role: "Développeur Web - Desktop",
     image: "/teams/ralph.jpg",
-    description: "Participe activement au succès des projets.",
-    email: "ralph@eventa.mg",
-    phone: "+261 34 00 000 09",
+    description: "Développe des solutions logicielles robustes et des applications web sur mesure pour répondre aux besoins techniques.",
+    email: "fanantenanaralainohasoavina@gmail.com",
+    phone: "+261 33 15 58 975",
     whatsapp: "https://wa.me/261340000009",
     facebook: "https://m.me/ralph.eventa"
   },
   {
-    name: "KEVIN",
-    role: "Membre de l'équipe",
+    name: "Mendrika",
+    role: "Développeur Web - Desktop",
     image: "/teams/kevin.jpg",
-    description: "Participe activement au succès des projets.",
-    email: "kevin@eventa.mg",
+    description: "Spécialiste du développement logiciel, il conçoit des architectures performantes pour le web et les applications de bureau.",
+    email: "mendrikaafitiavanaa@gmail.com",
     phone: "+261 34 00 000 10",
     whatsapp: "https://wa.me/261340000010",
     facebook: "https://m.me/kevin.eventa"
-  }
+  },
+  {
+    name: "Voahary RAMERISON",
+    role: "Développeuse IA - Modèle photo",
+    image: "/teams/voahary.jpg",
+    description: "Allie expertise en intelligence artificielle et créativité artistique en tant que modèle photo.",
+    email: "voharyramerison@gmail.com",
+    phone: "+261 34 31 772 51",
+    whatsapp: "https://wa.me/261340000010",
+    facebook: "https://m.me/kevin.eventa"
+  },
+  {
+    name: "Fréderic ANDRIANANTENAINA",
+    role: "Développeur IA - Web",
+    image: "/teams/frederic.jpg",
+    description: "Intègre des solutions d'intelligence artificielle avancées dans des applications web modernes.",
+    email: "andrianantenainafrederic9@gmail.com",
+    phone: "+261 34 88 122 84",
+    whatsapp: "https://wa.me/261340000006",
+    facebook: "https://m.me/kalo.eventa"
+  },
 ];
 
 export default function Team() {

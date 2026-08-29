@@ -9,22 +9,22 @@ import SectionTitle from '@/components/ui/SectionTitle';
 export default function Contact() {
   const membres = [
     {
-      name: 'Rakoto Jean',
-      role: 'Coordinateur',
-      email: 'jean@eventa.mg',
-      phone: '+261 34 00 000 01',
+      name: 'Ismael Jean',
+      role: 'Photographe',
+      email: 'ismaeljean@gmail.com',
+      phone: '+261 32 56 819 06',
     },
     {
-      name: 'Rabe Marie',
-      role: 'Responsable Communication',
-      email: 'marie@eventa.mg',
-      phone: '+261 34 00 000 02',
+      name: 'Kalo RAVALOHARIVONY',
+      role: 'Communauty manager',
+      email: 'kaloravaloharivony@gmail.com',
+      phone: '+261 34 88 122 84',
     },
     {
-      name: 'Rakotomalala Andry',
-      role: 'Lead Développeur',
-      email: 'andry@eventa.mg',
-      phone: '+261 34 00 000 03',
+      name: 'Voahary RAMERISON',
+      role: 'Modele photo',
+      email: 'voharyramerison@gmail.com',
+      phone: '+261 34 31 772 51',
     },
   ];
 
