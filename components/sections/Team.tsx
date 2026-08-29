@@ -18,7 +18,7 @@ export default function Team() {
       email: "tiana@eventa.mg",
       phone: "+261 34 01 654 12",
       whatsapp: "https://wa.me/261340165412",
-      facebook: "https://m.me/tiana.eventa"
+      facebook: "https://www.facebook.com/ignace.razanajatovo"
     },
     {
       name: "HALA Kanty",
@@ -26,9 +26,9 @@ export default function Team() {
       image: "/teams/hala.jpg",
       description: t('team.descriptions.hala'),
       email: "befenosteeven@gmail.com",
-      phone: "+261 34 00 000 03",
-      whatsapp: "https://wa.me/261340000003",
-      facebook: "https://m.me/kanty.eventa"
+      phone: "+261 32 85 351 18",
+      whatsapp: "https://wa.me/261328535118",
+      facebook: "https://www.facebook.com/steeven.befeno"
     },
     {
       name: "Finaritra Sarobidy",
@@ -36,9 +36,9 @@ export default function Team() {
       image: "/teams/sarobidy.jpeg",
       description: t('team.descriptions.sarobidy'),
       email: "santatriniainafinaritra19@gmail.com",
-      phone: "+261 34 88 122 84",
-      whatsapp: "https://wa.me/261340000006",
-      facebook: "https://m.me/kalo.eventa"
+      phone: "+230 55 330 073",
+      whatsapp: "https://wa.me/23055330073",
+      facebook: "https://www.facebook.com/finaritra.santatry.ny.aina"
     },
     {
       name: "Andry RAMANANTSOA",
@@ -48,7 +48,7 @@ export default function Team() {
       email: "andry@eventa.mg",
       phone: "+261 38 67 201 46",
       whatsapp: "https://wa.me/261386720146",
-      facebook: "https://m.me/andry.eventa"
+      facebook: "https://www.facebook.com/andrehy.mivonona.2025"
     },
     {
       name: "Ismael RAMANANTSOA",
@@ -57,8 +57,8 @@ export default function Team() {
       description: t('team.descriptions.ismael'),
       email: "ismaeljean@gmail.com",
       phone: "+261 32 56 819 06",
-      whatsapp: "https://wa.me/261340000002",
-      facebook: "https://m.me/ismael.eventa"
+      whatsapp: "https://wa.me/261325681906",
+      facebook: "https://www.facebook.com/ismael.jean.179045"
     },
     
     {
@@ -68,8 +68,8 @@ export default function Team() {
       description: t('team.descriptions.ankafa'),
       email: "narindratsiry18@gmail.com",
       phone: "+261 38 38 466 60",
-      whatsapp: "https://wa.me/261340000004",
-      facebook: "https://m.me/ankafa.eventa"
+      whatsapp: "https://wa.me/261383846660",
+      facebook: "https://www.facebook.com/ANKAFA.Matoky"
     },
     {
       name: "Kalo RAVALOHARIVONY",
@@ -78,8 +78,8 @@ export default function Team() {
       description: t('team.descriptions.kalo'),
       email: "kaloravaloharivony@gmail.com",
       phone: "+261 34 88 122 84",
-      whatsapp: "https://wa.me/261340000006",
-      facebook: "https://m.me/kalo.eventa"
+      whatsapp: "https://wa.me/261348812284",
+      facebook: "https://www.facebook.com/kalo.ravaloharivony"
     },
     
     {
@@ -87,10 +87,10 @@ export default function Team() {
       role: t('team.roles.dev_mobile_designer'),
       image: "/teams/antonio.jpeg",
       description: t('team.descriptions.antonio'),
-      email: "kaloravaloharivony@gmail.com",
-      phone: "+261 34 88 122 84",
-      whatsapp: "https://wa.me/261340000006",
-      facebook: "https://m.me/kalo.eventa"
+      email: "antoniobotomanana@gmail.com",
+      phone: "+261 32 57 281 90",
+      whatsapp: "https://wa.me/261325728190",
+      facebook: "https://www.facebook.com/profile.php?id=61561897125669"
     },
     {
       name: "Rinah RANDRIANARISON",
@@ -99,8 +99,19 @@ export default function Team() {
       description: t('team.descriptions.rinah'),
       email: "randrianarisonrinah18@gmail.com",
       phone: "+261 34 36 094 45",
-      whatsapp: "https://wa.me/261340000007",
-      facebook: "https://m.me/rinah.eventa"
+      whatsapp: "https://wa.me/261343609445",
+      facebook: "https://www.facebook.com/rinah.tsily.randrisahondra"
+    }
+    ,
+    {
+      name: "Vincent RANDRIATSARA",
+      role: t('team.roles.enseignant_bancaire'),
+      image: "/teams/vincent.png",
+      description: t('team.descriptions.mendrika'),
+      email: "liantsara@gmail.com",
+      phone: "+261 33 18 445 84",
+      whatsapp: "https://wa.me/261331844584",
+      facebook: "https://www.facebook.com/vincent.randriatsara.2025"
     },
     {
       name: "Ralf FANANTENANA",
@@ -109,18 +120,18 @@ export default function Team() {
       description: t('team.descriptions.ralf'),
       email: "fanantenanaralainohasoavina@gmail.com",
       phone: "+261 33 15 58 975",
-      whatsapp: "https://wa.me/261340000009",
-      facebook: "https://m.me/ralph.eventa"
+      whatsapp: "https://wa.me/261331558975",
+      facebook: "https://www.facebook.com/fanantenana.ralainohasoavina"
     },
     {
-      name: "Mendrika",
+      name: "Mendrika FITIAVANA",
       role: t('team.roles.dev_web_desktop'),
       image: "/teams/kevin.jpeg",
       description: t('team.descriptions.mendrika'),
       email: "mendrikaafitiavanaa@gmail.com",
-      phone: "+261 34 00 000 10",
-      whatsapp: "https://wa.me/261340000010",
-      facebook: "https://m.me/kevin.eventa"
+      phone: "+261 33 29 225 10",
+      whatsapp: "https://wa.me/261332922510",
+      facebook: "https://www.facebook.com/mendrika.hrna"
     },
     {
       name: "Voahary RAMERISON",
@@ -130,7 +141,7 @@ export default function Team() {
       email: "voharyramerison@gmail.com",
       phone: "+261 34 31 772 51",
       whatsapp: "https://wa.me/261340000010",
-      facebook: "https://m.me/kevin.eventa"
+      facebook: "https://www.facebook.com/mihaja.rakotoarijaona.9"
     },
     {
       name: "Fréderic ANDRIANANTENAINA",
@@ -138,9 +149,19 @@ export default function Team() {
       image: "/teams/frederic.jpg",
       description: t('team.descriptions.frederic'),
       email: "andrianantenainafrederic9@gmail.com",
-      phone: "+261 34 88 122 84",
-      whatsapp: "https://wa.me/261340000006",
-      facebook: "https://m.me/kalo.eventa"
+      phone: "+261 38 59 000 80",
+      whatsapp: "https://wa.me/261385900080",
+      facebook: "https://www.facebook.com/MitMatRP"
+    },
+    {
+      name: "Fanasina  BINAH",
+      role: t('team.roles.formateur'),
+      image: "/teams/fanasina.jpeg",
+      description: t('team.descriptions.rinah'),
+      email: " fanasinabinah@gmail.com",
+      phone: "+261 38 75 303 68",
+      whatsapp: "https://wa.me/261387530368",
+      facebook: "https://www.facebook.com/arsou.mih"
     },
   ];
 
